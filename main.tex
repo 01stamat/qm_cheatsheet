@@ -1,0 +1,176 @@
+% Basic stuff
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{changepage}
+
+% 3 column landscape layout with fewer margins
+\usepackage[landscape, left=0.75cm, top=1cm, right=0.75cm, bottom=1.5cm, footskip=15pt]{geometry}
+\usepackage{flowfram}
+\ffvadjustfalse
+\setlength{\columnsep}{1cm}
+\Ncolumn{3}
+
+% define nice looking boxes
+\usepackage{tcolorbox}
+
+% a base set, that is then customised
+\tcbset {
+  base/.style={
+    boxrule=0mm,
+    leftrule=1mm,
+    left=1.75mm,
+    arc=0mm, 
+    fonttitle=\bfseries, 
+    colbacktitle=black!10!white, 
+    coltitle=black, 
+    toptitle=0.75mm, 
+    bottomtitle=0.25mm,
+    title={#1}
+  }
+}
+
+\definecolor{brandblue}{rgb}{0.34, 0.7, 1}
+
+\newtcolorbox{mainbox}[1]{
+  colframe=brandblue, 
+  base={#1}
+}
+\newtcolorbox{credits}[1]{
+  colframe=green, 
+  base={#1}
+}
+
+\newtcolorbox{subbox}[1]{
+  colframe=black!20!white,
+  base={#1}
+}
+%hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=brandblue,
+    filecolor=magenta,      
+    urlcolor=brandblue,
+    pdftitle={Quantenmechanik Zusammenfassung}
+}
+
+\urlstyle{same}
+
+
+% Mathematical typesetting & symbols
+\usepackage{braket}
+\usepackage{amsthm, mathtools, amssymb} 
+\usepackage{marvosym, wasysym}
+
+% Tables
+\usepackage{tabularx, multirow}
+\usepackage{booktabs}
+\renewcommand*{\arraystretch}{2}
+
+% Make enumerations more compact
+\usepackage{enumitem}
+\setitemize{itemsep=0.5pt}
+\setenumerate{itemsep=0.5pt}
+
+% To include sketches
+\usepackage{graphicx}
+
+% Metadata
+\title{TU Graz SS22 \break
+\textbf{Quantenmechanik Zusammenfassung - Matthias Staffler}}
+
+% Math helper stuff
+\def\limn{\lim_{n\to \infty}}
+\def\limx{\lim_{x\to x_0}}
+\def\limxp{\lim_{x\to x_0^+}}
+\def\limxm{\lim_{x\to x_0^-}^-}
+\def\limxz{\lim_{x\to 0}}
+
+\def\limxo{\lim_{x\to 0}}
+\def\limxi{\lim_{x\to\infty}}
+\def\limxn{\lim_{x\to-\infty}}
+
+\def\R{\mathbb{R}}
+\def\N{\mathbb{N}}
+\def\C{\mathbb{C}}
+\def\r{$\mathbb{R}$}
+\def\n{$\mathbb{N}$}
+\def\c{$\mathbb{C}$}
+
+\newcommand{\rn}[1][n]{$\R^{#1}\ $}
+\newcommand{\Rn}[1][n]{\R^{#1}}
+\def\Rm{\R^m}
+\def\rm{$\Rm$}
+\def\dx{\text{ d}x}
+\newcommand{\Mc}[1]{\mathcal{#1}}
+\newcommand{\mc}[1]{$\Mc{#1}$}
+
+\newcommand{\Xrn}[1][n]{X\subset\Rn[#1]}
+\newcommand{\xrn}[1][n]{$\Xrn[#1]\ $}
+
+\def\R{\mathbb{R}}
+\def\N{\mathbb{N}}
+\def\C{\mathbb{C}}
+\def\dx{\text{ d}x}
+
+\def\Pd{\partial}
+\def\pd{$\Pd$}
+
+\newcommand{\Pdo}[2]{\dfrac{\Pd #1}{\Pd #2}}
+\newcommand{\pdo}[2]{$\Pdo{#1}{#2}$}
+
+\newcommand{\sumk}[1][\infty]{\sum_{k=1}^#1}
+\newcommand{\sumj}[1][\infty]{\sum_{j=1}^#1}
+\newcommand{\sumn}[1][\infty]{\sum_{n=0}^#1}
+
+\newcommand{\seq}[2][n]{$(#2_#1)_{_{#1\geq1}}$}
+\newcommand{\ser}[2]{$\sum_{#1=1}^\infty #2_#1$}
+\newcommand{\serz}[2]{$\sum_{#1=0}^\infty #2_#1$}
+
+\newcommand{\Seq}[1]{(#1_n)_{_{n\geq1}}}
+\newcommand{\Ser}[2]{\sum_{#1=1}^\infty #2_#1}
+\newcommand{\Serz}[2]{\sum_{#1=0}^\infty #2_#1}
+
+\newcommand{\fdr}[1][f]{$#1: D\longrightarrow\R\ $}
+\newcommand{\Fdr}[1][f]{#1: D\longrightarrow\R}
+\newcommand{\fct}[3]{$#1: #2\longrightarrow#3$}
+\newcommand{\Fct}[3]{#1: #2\longrightarrow#3}
+
+\newcommand{\inte}[3]{$\int_{#1}^{#2} #3(x)\ dx$}
+\newcommand{\Inte}[3]{\int_{#1}^{#2} #3(x)\ dx}
+
+\newcommand{\fndx}[2][x]{$#2^{(n)}(#1)$}
+\newcommand{\Fndx}[2][x]{#2^{(n)}(#1)}
+\newcommand{\fnd}[2][n]{$#2^{(#1)}$}
+\newcommand{\Fnd}[2][n]{#2^{(#1)}}
+
+\newcommand{\Fxrm}[1][m]{\Fct{f}{X}{\Rn[#1]}}
+\newcommand{\fxrm}[1][m]{$\Fxrm[#1]$}
+
+\newcommand{\str}{$(*)\ $}
+\newcommand{\Str}{(*)}
+
+\newcommand{\Pmat}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+\newcommand{\Bmat}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\Mat}[1]{\begin{matrix} #1 \end{matrix}}
+\newcommand{\pmat}[1]{$\begin{pmatrix} #1 \end{pmatrix}$}
+\newcommand{\bmat}[1]{$\begin{bmatrix} #1 \end{bmatrix}$}
+\newcommand{\mat}[1]{$\Mat{#1}$}
+
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Dim}{Dim}
+\DeclareMathOperator{\Tr}{Tr}
+
+\begin{document}
+
+\input{chapters/3_postulate.tex}
+\input{chapters/4_das_freie_teilchen.tex}
+\input{chapters/5_schroedinger_gleichung.tex}
+\input{chapters/6_1d_systeme.tex}
+\input{chapters/7_zentralkraftproblem.tex}
+\input{chapters/8_symmetrien.tex}
+\input{chapters/9_naeherungsmethoden.tex}
+
+\end{document}
