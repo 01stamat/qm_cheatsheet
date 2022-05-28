@@ -1,1 +1,35 @@
 \section{Das freie Teilchen}
+
+\begin{subbox}{Ort und Impuls}
+Ortsoperator:
+\[ X \ket{x} = x \ket{x} \]
+Translationsoperator:
+\[ T(dx) \ket{x} = \ket{x + dx}\]
+\[ T(dx) = 1 - i G dx + \mathcal{O}(dx^2) \]
+\[ T(dx) = 1 - \frac{i}{\hbar} P dx + \mathcal{O}(dx^2) \Longleftrightarrow G = \frac{P}{\hbar} \] %fix 1 for 1 operator
+Kommutator:
+\[ \comm{X_i}{P_j} = i\hbar \delta_{ij} \]
+\end{subbox}
+
+\begin{subbox}{Wellenfunktionen}
+Kontinuumsformulierung:
+\[ \braket{a}{b} = \int dx  \braket{a}{x} \braket{x}{b} = \int dx \,\psi_a^*(x)\psi_b(x) \]
+Erwartungswert für $X$:
+\[ \ev{X}{a} = \int dx \, x \cdot \psi_a^*(x) \psi_a(x) = \int dx \, x |\psi_a(x)|^2 \]
+Matrixelement für $P$:
+\[ \mel**{x}{\frac{iP}{\hbar}}{a} = \frac{\partial \psi_a(x)}{\partial x} \]
+\end{subbox}
+
+\begin{mainbox}{Darstellungen}
+Ortsdarstellung: 
+\[ (\ket{a}, X, P) \longleftrightarrow (\psi_a(x), x, -i\hbar\partial_x) \]
+Impulsdarstellung:
+\[ (\ket{a}, P, X) \longleftrightarrow (\phi_a(p), p, i\hbar\partial_p) \]
+
+Darstellungswechsel:
+\[ \mel{x}{P}{p} =  p \braket{x}{p} \]
+\[ \mel{x}{P}{p} = -i\hbar \partial_x \braket{x}{p} \]
+\[ \Rightarrow \braket{x}{p} = \psi_p(x) = C e^{\frac{ipx}{\hbar}} \]
+\[ \psi_a(x) = \braket{x}{a} = \int dp \, \braket{x}{p} \braket{p}{a} = \int \, \frac{dp}{\sqrt{2\pi \hbar}} e^{\frac{ipx}{\hbar}} \phi_a(p) \]
+
+\end{mainbox}

@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.9)  28 MAY 2022 14:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.10.9)  28 MAY 2022 16:17
 entering extended mode
-**"c:/Users/staff/OneDrive - Universität Graz/2022SS/Quantenmechanik/cheatsheet/main.tex"
-(c:/Users/staff/OneDrive - Universität Graz/2022SS/Quantenmechanik/cheatsheet/main.tex
+**c:/Users/staff/git/qm_cheatsheet/main.tex
+(c:/Users/staff/git/qm_cheatsheet/main.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-08-27> (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
@@ -528,7 +528,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip100
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 57.
- (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/braket\braket.sty) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+ (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
+Package: physics 
+ (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-08-27 L3 programming layer (loader) 
+ (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count323
+\l__pdf_internal_box=\box73
+))
+Package: xparse 2021-08-27 L3 Experimental document command parser
+)) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks43
 \thm@bodyfont=\toks44
@@ -541,17 +551,18 @@ Package: amsthm 2020/05/29 v2.20.6
 \dth@everypar=\toks48
 ) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
- (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+
+(C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count323
-\calc@Bcount=\count324
+\calc@Acount=\count324
+\calc@Bcount=\count325
 \calc@Adimen=\dimen258
 \calc@Bdimen=\dimen259
 \calc@Askip=\skip104
 \calc@Bskip=\skip105
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count325
+\calc@Ccount=\count326
 \calc@Cskip=\skip106
 ) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
@@ -560,7 +571,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count326
+\g_MT_multlinerow_int=\count327
 \l_MT_multwidth_dim=\dimen260
 \origjot=\skip107
 \l_MT_shortvdotswithinadjustabove_dim=\dimen261
@@ -569,12 +580,11 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_intertext_sep=\dimen264
 \l_MT_above_shortintertext_sep=\dimen265
 \l_MT_below_shortintertext_sep=\dimen266
-\xmathstrut@box=\box73
+\xmathstrut@box=\box74
 \xmathstrut@dim=\dimen267
 ) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+ (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -588,29 +598,35 @@ Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 \symwasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/bbm\bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
 ) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
  (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
 \col@sep=\dimen268
-\ar@mcellbox=\box74
+\ar@mcellbox=\box75
 \extrarowheight=\dimen269
 \NC@list=\toks49
 \extratabsurround=\skip108
 \backup@length=\skip109
-\ar@cellbox=\box75
+\ar@cellbox=\box76
 )
 \TX@col@width=\dimen270
 \TX@old@table=\dimen271
 \TX@old@col=\dimen272
 \TX@target=\dimen273
 \TX@delta=\dimen274
-\TX@cols=\count327
+\TX@cols=\count328
 \TX@ftn=\toks50
 ) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip110
-\multirow@cntb=\count328
+\multirow@cntb=\count329
 \multirow@dima=\skip111
 \bigstrutjot=\dimen275
 ) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
@@ -625,46 +641,42 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen283
 \cmidrulekern=\dimen284
 \defaultaddspace=\dimen285
-\@cmidla=\count329
-\@cmidlb=\count330
+\@cmidla=\count330
+\@cmidlb=\count331
 \@aboverulesep=\dimen286
 \@belowrulesep=\dimen287
-\@thisruleclass=\count331
-\@lastruleclass=\count332
+\@thisruleclass=\count332
+\@lastruleclass=\count333
 \@thisrulewidth=\dimen288
 ) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip112
 \enit@outerparindent=\dimen289
 \enit@toks=\toks51
-\enit@inbox=\box76
-\enit@count@id=\count333
-\enitdp@description=\count334
-) (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count335
-\l__pdf_internal_box=\box77
+\enit@inbox=\box77
+\enit@count@id=\count334
+\enitdp@description=\count335
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -719,7 +731,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 166.
+Package hyperref Info: Link coloring ON on input line 156.
  (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -729,50 +741,53 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count342
 )
-LaTeX Info: Redefining \ref on input line 166.
-LaTeX Info: Redefining \pageref on input line 166.
-LaTeX Info: Redefining \nameref on input line 166.
+LaTeX Info: Redefining \ref on input line 156.
+LaTeX Info: Redefining \pageref on input line 156.
+LaTeX Info: Redefining \nameref on input line 156.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
  (chapters/3_postulate.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 5.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 4.
  (C:\Users\staff\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)) (chapters/4_das_freie_teilchen.tex) (chapters/5_schroedinger_gleichung.tex) (chapters/6_1d_systeme.tex) (chapters/7_zentralkraftproblem.tex
+)) (chapters/4_das_freie_teilchen.tex
+Overfull \hbox (13.90173pt too wide) detected at line 33
+\OML/cmm/m/it/10  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = [] = [] \OML/cmm/m/it/10 dp  [] [] \OT1/cmr/m/n/10 = []  []\OML/cmm/m/it/10 e[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )
+ []
+
+) (chapters/5_schroedinger_gleichung.tex) (chapters/6_1d_systeme.tex) (chapters/7_zentralkraftproblem.tex
 Overfull \hbox (12.37062pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/14.4 Zentralkraftproblem und Dre-him-
  []
 
 ) (chapters/8_symmetrien.tex) (chapters/9_naeherungsmethoden.tex) [1{C:/Users/staff/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-
-
 ] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2C6A449BE97D0A1347B137A20AA4C499;1241.
+(rerunfilecheck)             Checksum: C057AF92C1045994EE6423355071355D;1068.
  ) 
 Here is how much of TeX's memory you used:
- 23498 strings out of 478927
- 417750 string characters out of 2852535
- 752884 words of memory out of 3000000
- 40910 multiletter control sequences out of 15000+600000
- 406997 words of font info for 42 fonts, out of 8000000 for 9000
+ 24141 strings out of 478927
+ 424511 string characters out of 2852535
+ 786774 words of memory out of 3000000
+ 41543 multiletter control sequences out of 15000+600000
+ 406700 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,11n,89p,498b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (1 page, 53683 bytes).
+ 83i,11n,89p,451b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/staff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm5.pfb>
+Output written on main.pdf (1 page, 138704 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
+ 69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
