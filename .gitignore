@@ -1,0 +1,8 @@
+# Latex runtime files
+*.toc
+*.run.xml
+*.blg
+*.bcf
+*.bbl
+*.aux
+*.ini
