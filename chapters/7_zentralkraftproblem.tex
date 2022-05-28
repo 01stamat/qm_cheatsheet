@@ -1,1 +1,43 @@
 \section{Zentralkraftproblem und Drehimpuls}
+
+\begin{mainbox}{Drehimpuls}
+\[ \vec{L} = \vec{X} \cross \vec{P} \]
+\[\expval{L_3} = \hbar l_3\]
+Drehimpulsalgebra:
+\[\comm{L_i}{L_j} = i\hbar \sum_k \epsilon_{ijk} L_k \]
+\[L_3 \ket{l, l_3} = \hbar l_3 \ket{l, l_3} \]
+\[\vec{L}^2 \ket{l, l} = \hbar^2 l(l+1) \ket{l, l} \]
+\end{mainbox}
+
+\begin{mainbox}{Coulomb-Potential}
+\[ V(r) = \frac{\gamma}{r} \]
+Stationäre Schrödinger-Gleichung lösen:
+\begin{align*}
+    E =& -\frac{l^2}{2a_B} \frac{Z}{n^2} \\
+    \Psi_{nll_3} =& \frac{2}{n^2}\sqrt{\frac{Z^3}{a_B^3}}\sqrt{\frac{(n-1-l)!}{(n+l)!}} \left(\frac{2Zr}{na_B}\right)^l \\ & \cdot L_{n-l-1}^{2l+1}\left(\frac{2Zr}{na_B}\right) e^{-\frac{Zr}{na_B}}Y_{ll_3}(\theta, \omega)
+\end{align*}
+Quantenzahlen für Zustand $\ket{n, l, l_3}$:
+\begin{align*}
+    n: &\text{ Hauptquantenzahl} &\\
+    l: &\text{ Bahndrehimpuls} &\\
+    & l \leq n-1 &\\
+    l_3: &\text{ z-Komponente Bahndrehimpuls. } &\\
+    & l_3 = {-l, \dots , 0, \dots , l} &\\
+    &(2l+1)\text{-fach entartet.}
+\end{align*}
+\end{mainbox}
+
+\begin{mainbox}{Harmonischer Oszillator in 3D}
+Kartesische Koordinaten:
+\[ H = \sum_i \left( -\frac{\hbar^2}{2m}\partial_i ^2 + \frac{m\omega_i^2}{2}x_i^2\right) \]
+\begin{align*}
+    Rightarrow & E = \sum_i \hbar \omega_i \left(n_i + \frac{1}{2}\right) \\
+    & H = \sum_i \hbar \omega_i \left(a_i^\dag a_i + \frac{1}{2}\right)
+\end{align*}
+
+Kugelkoordinaten und Drehimpuls:
+\begin{align*}
+    \Rightarrow E =& 2n + l + \frac{3}{2} \\
+     \phi_{nll_3} =& \sqrt{\frac{2n!}{(n+l+\frac{1}{2})!}} \frac{r^l}{a_h^{l+\frac{3}{2}}} L_n^{l+\frac{1}{2}} \left(\frac{r}{a_h}\right) e^{-\frac{r^2}{2a_h^2}} Y_{ll_3} (\theta, \omega)
+\end{align*}
+\end{mainbox}

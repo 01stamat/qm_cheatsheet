@@ -1,1 +1,36 @@
 \section{1-dimensionale Systeme}
+
+\begin{subbox}{Lösungsstrategie}
+\begin{enumerate}
+    \item Asymptotische Analyse
+    \item Reihenansatz
+    \item Reihenabbruchbedingung suchen
+\end{enumerate}
+\end{subbox}
+
+\begin{mainbox}{Harmonischer Oszillator}
+\[ H = \frac{P^2}{2m} + \frac{m\omega^2}{2} X^2 \]
+Schrödinger-Gleichung lösen:
+\begin{align*}
+    \Rightarrow E_n  &= \hbar \omega (n + \frac{1}{2}) \\
+    \Rightarrow \psi_n(x, t) &= \frac{1}{\sqrt{a_H}} \frac{\pi^{-\frac{1}{4}}}{\sqrt{2^n n!}} \cdot H_n \left(\frac{x}{a_H}\right) e^{-\frac{x^2}{2a_H^2}-i\frac{E_nt}{\hbar}}
+\end{align*}
+Operatorsprache:
+\[ a = \sqrt{\frac{m \omega}{2\hbar}} \left(X + \frac{iP}{m\omega}\right), \hspace{0.6cm} a^\dag = \sqrt{\frac{m \omega}{2\hbar}} \left(X - \frac{iP}{m\omega}\right) \]
+\[ N = a^\dag a \]
+\[\Rightarrow H = \hbar \omega \left(N + \frac{1}{2}\right), \hspace{.6cm} N \ket{E_n} = n \ket{E_n} \]
+\end{mainbox}
+
+\begin{subbox}{Erzeuger- und Vernichter}
+\begin{align*}
+\comm*{a}{a^\dag} &= 1 \\
+\comm*{N}{a} &= -a \\
+\comm*{N}{a^\dagger} &= a^\dagger
+\end{align*}
+Wirkung von $a$ und $a^\dagger$: 
+\[ a\ket{n} = \sqrt{n} \ket{n-1} \]
+\[ a^\dagger{n} = \sqrt{n+1} \ket{n+1} \]
+Ort und Impuls ausgedrückt mit Erzeuger und Vernichter:
+\[ X = \sqrt{\frac{\hbar}{2m\omega}} (a + a^\dagger) \]
+\[ P = \frac{1}{i} \sqrt{\frac{m\omega\hbar}{2}} (a-a^\dagger) \]
+\end{subbox}
