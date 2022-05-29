@@ -1,1 +1,28 @@
 \section{Näherungsmethoden}
+
+\begin{mainbox}{Störungstheorie ohne Degeneration}
+Hamilton-Operator wird in bekannten $H_0$ und Störpotenzial $V$ aufgeteilt.
+\[ H = H_0 + \lambda V \]
+Energiedifferenz zu ungestörten Energieniveaus:
+\[\Delta_n = E_n - E_n^{(0)} \]
+Erste Ordnung in Störungstheorie:
+\[\Delta_n^{(1)} = V_{nn} = \mel{n^{(0)}}{V}{k^{(0)}} \]
+\[\ket*{n^{(1)}} = \sum_{n^{(0)}\neq k^{(0)}} \frac{V_{kn}}{E_n^{(0)}-E_k^{(0)}} \ket*{k^{(0)}} \]
+Zweite Ordnung in Störungstheorie:
+\[ \Delta_n^{(2)} = \sum_{n^{(0)}\neq k^{(0)}} \frac{|V_{kn}|^2}{E_n^{(0)}-E_k^{(0)}} \]
+\begin{align*}
+ \ket*{n^{(2)}} =& \sum_{n\neq k} \sum_{l\neq n} \frac{V_{kl}V_{ln}}{\left(E_n^{(0)}-E_k^{(0)}\right)\left(E_n^{(0)} - E_l^{(0)}\right)} \ket*{k^{(0)}}  \\ 
+ & -\sum_{n\neq k} \frac{V_{nn} V_{kn}}{\left(E_n^{(0)}-E_k^{(0)}\right)^2} \ket*{k^{(0)}}
+\end{align*}
+Näherung:
+\[ \ket*{n} = \ket*{n^{(0)}} + \lambda \ket*{n^{(1)}} + \lambda ^2 \ket*{n^{(2)}} + \dots \]
+\[ \Delta_n = \lambda \Delta_n^{(1)} + \lambda^2 \Delta_n^{(2)} + \dots \]
+\end{mainbox}
+
+% \begin{subbox}{Degenerierte Störungstheorie}
+    
+% \end{subbox}
+
+\begin{subbox}{Variationsansatz}
+    
+\end{subbox}

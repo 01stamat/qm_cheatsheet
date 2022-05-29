@@ -1,1 +1,49 @@
 \section{Symmetrien}
+
+\begin{subbox}{Erhaltungsgrößen}
+Symmetrien sind unitäre Operatoren ($S^\dag = S^{-1}$) mit $\comm{H}{S} =0$
+\[ S = 1 -i \cdot \varepsilon \frac{1}{\hbar} G + \mathcal{O}(\varepsilon^2) \]
+\[ \comm{H}{G} = 0 \Rightarrow G(t) = G(0) \Rightarrow \expval{G}{t} = \expval{G}{0} \]
+Erzeugte Observablen $G$ (hermitisch) sind Erhaltungsgrößen.
+\end{subbox}
+
+% \begin{subbox}{Wigner-Eckart-Theorem}
+% Kotinuierliche Symmetrie $S$ mit $\comm{H}{S}=0$:
+% \[H(S\ket{E}) = SH\ket{E} = ES\ket{E} \]
+% \begin{enumerate}
+%     \item \( S\ket{E} = \alpha \ket{E} \) mit $\alpha$ eine Phase.
+%     \item \( S\ket{E} \neq \ket{E} \Rightarrow \) Degeneration 
+% \end{enumerate}
+% \end{subbox}
+
+\begin{mainbox}{Parität}
+\begin{align*}
+    \text{ Spiegelsymmetrie: } & \vec{X} \rightarrow -\vec{X} \\
+    & t \rightarrow t
+\end{align*}
+Operator $\Pi$ mit $\Pi^\dag X \Pi = -X$ und $\Pi^\dag = \Pi^{-1} = \Pi$ hermitisch und unitär.
+\[ \Pi \ket{x} = e^{i\delta} \ket{-x}, \hspace{.2cm} \text{Konvention: } \delta = 0 \]
+\[ \Pi \ket{x} = \pm \ket{x} \]
+\[ \Pi \ket{l, l_3} = (-1)^l \ket{l, l_3} \]
+\[ \Pi^\dag P \Pi = -P \]
+Paritätseigenkets $\ket{\alpha}$ und $\ket{\beta}$ und -eigenwerte $\pi_\alpha$ und $\pi_\beta$:
+\begin{align*}
+\mel{\beta}{X}{\alpha} &= \mel{\beta}{\Pi^\dag \Pi X \Pi^\dag \Pi}{\alpha} = \mel{\beta}{\Pi^\dag (-X) \Pi}{\alpha} \\
+ & = - \pi_\alpha \pi_\beta \mel{\beta}{X}{\alpha}
+\end{align*}
+Möglichkeiten:
+\begin{enumerate}
+    \item \(\pi_\alpha \pi_\beta = 1 \Rightarrow \mel{\beta}{X}{\alpha} = - \mel{\beta}{X}{\alpha} = 0 \)
+    \item \(\pi_\alpha \pi_\beta = -1 \Rightarrow \mel{\beta}{X}{\alpha} \neq 0 \)
+\end{enumerate}
+\[ \expval{X}{n} = - \pi_n^2 \expval{X}{n} = - \expval{X}{n} = 0 \]
+\end{mainbox}
+
+\begin{mainbox}{Zeitumkehr}
+    \begin{align*}
+        \text{ Bewegungsumkehr: } & \vec{x} \rightarrow \vec{x} \\
+        & \vec{P} \rightarrow -\vec{P}
+    \end{align*}
+Operator $\Theta$ mit:
+\[ \Theta (a\ket{\alpha} + b \ket{\beta} ) = a^* \Theta \ket{\alpha} + b^* \Theta \ket{\beta} \]
+\end{mainbox}
